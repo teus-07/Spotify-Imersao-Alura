@@ -1,0 +1,72 @@
+/* Reset.css - Reseta os estilos padrão dos navegadores */
+
+/* Remove margens, paddings e define o box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove estilos padrão de listas */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove sublinhados e estilos padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove bordas, paddings e estilos de botões */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Garante que tabelas não tenham espaçamento interno */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove estilos padrão de inputs e textos */
+input,
+textarea {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Zera estilos de títulos e parágrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Define imagens para nunca excederem o tamanho do contêiner */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove estilos padrão de blocos de citação */
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove estilos padrão de figuras */
+figure {
+  margin: 0;
+}

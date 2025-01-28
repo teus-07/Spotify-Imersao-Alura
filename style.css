@@ -1,0 +1,240 @@
+:root {
+  --txtc0: #b3b3b3;
+  --bg0: #121212;
+  --bg1: #242424;
+  --border0: #878787;
+  --txtf: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+/*
+ ___ ___ ___  ___ ___   _   ___ 
+/ __|_ _|   \| __| _ ) /_\ | _ \
+\__ \| || |) | _|| _ \/ _ \|   /
+|___/___|___/|___|___/_/ \_\_|_\
+                                                                       
+*/
+
+.sidebar {
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.sidebar__navigation {
+  background-color: var(--bg0);
+  padding: 16px 0 0 16px;
+  border-radius: 8px;
+}
+
+.logo {
+  background-color: var(--bg0);
+  padding: 16px 0 0 16px;
+  border-radius: 8px;
+  display: flex;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.sidebar nav ul {
+  margin-top: 10px;
+  padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li {
+  padding-top: 20px;
+}
+
+.sidebar nav ul li a {
+  color: #b3b3b3;
+  font-weight: 700;
+  font-family: var(--txtf);
+  font-size: 14px;
+}
+
+/*
+_    ___ ___ ___    _   _____   __
+| |  |_ _| _ ) _ \  /_\ | _ \ \ / /
+| |__ | || _ \   / / _ \|   /\ V / 
+|____|___|___/_|_\/_/ \_\_|_\ |_|  
+                                   
+*/
+
+.library {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg0);
+  color: var(--txtc0);
+  padding: 4px 8px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.library .library__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library__content .library__button {
+  display: flex;
+  text-align: center;
+  background-color: transparent;
+  color: var(--txtc0);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 10px;
+  margin-right: 10px;
+  border: 0;
+}
+
+.library .library__content .fa {
+  font-size: 20px;
+  margin-right: 10px;
+  padding-right: 8px;
+  font-weight: 300;
+  color: var(--txtc0);
+}
+
+.library .library__content .fa-plus {
+  margin: 20px 10px 20px 10px;
+}
+/*
+___ _      ___   ___    ___ ___ _____ 
+| _ \ |    /_\ \ / / |  |_ _/ __|_   _|
+|  _/ |__ / _ \ V /| |__ | |\__ \ | |  
+|_| |____/_/ \_\_| |____|___|___/ |_|  
+                                       
+*/
+
+.section__playlist {
+  background-color: var(--bg1);
+  color: var(--txtc0);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 0;
+  padding: 16px 20px;
+  border-radius: 10px;
+}
+
+.section__playlist .section-playlist__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-playlist__content .text {
+  padding-bottom: 14px;
+  font-family: var(--txtf);
+  color: #fff;
+}
+
+.section-playlist__content .titl {
+  font-weight: 700;
+}
+
+.section-playlist__content .subtitle {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.section-playlist__content .playlist__button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: var(--txtf);
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 12px;
+  width: 113px;
+}
+
+.sidebar .cookies {
+  margin: 25px 20px;
+}
+
+.sidebar .cookes a {
+  color: var(--txtc0);
+  font-weight: 500;
+  font-family: var(--txtf);
+  font-size: 10px;
+}
+
+.sidebar .cookes a:hover {
+  text-decoration: underline;
+}
+
+.languages .languages__button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid var(--border0);
+  cursor: pointer;
+  font-weight: bold;
+  width: 170px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+/*
+
+ ___ ___   ___ _____ ___ ___ 
+| __/ _ \ / _ \_   _| __| _ \
+| _| (_) | (_) || | | _||   /
+|_| \___/ \___/ |_| |___|_|_\
+                             
+*/
+
+.disclaimer-premium {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-image: linear-gradient(to right, #b72b9d, #2596be);
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.text__footer {
+  font-family: var(--txtf);
+  color: #fff;
+}
+
+.footer__button {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 40px;
+  padding: 14px 30px;
+  cursor: pointer;
+}
